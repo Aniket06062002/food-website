@@ -1,0 +1,112 @@
+.hloding {
+  width: 100%;
+  background-position: center;
+  background-image: none;
+  background-size: cover;
+  position: relative;
+  min-height: 40vh;
+  background-color: rgb(34, 15, 15);
+}
+.head {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  padding-top: 25vh;
+  font-weight: 600;
+  font-size: 3rem;
+  color: rgb(231, 32, 18);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 5rem 5rem;
+}
+.grid-item {
+  padding: 20px;
+  font-size: 2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border: 3px solid rgb(53, 42, 42);
+  border-radius: 1rem;
+}
+
+/* responsive */
+
+@media (max-width: 1295px) {
+  .head {
+    font-family: "Kanit", sans-serif;
+    text-align: center;
+    padding-top: 25vh;
+    font-weight: 400;
+    font-size: 2.5rem;
+    color: rgb(231, 32, 18);
+  }
+}
+
+@media (max-width: 979px) {
+  .header .navbar ul {
+    padding-top: 1vh;
+    list-style: none;
+  }
+
+  .header .navbar li {
+    flex-direction: column-reverse;
+  }
+
+  .header .navbar li a {
+    font-size: 1.5rem;
+    color: #e91e1e;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+    padding: 1.5rem 1.5rem;
+  }
+}
+@media (max-width: 748px) {
+  .berger {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5%;
+    top: 14vh;
+  }
+
+  .line {
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 3px 3px;
+  }
+
+  .header .navbar ul {
+    padding-top: 1vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    opacity: 0;
+  }
+
+  .header .navbar li a {
+    font-size: 1.5rem;
+    color: #1a1616;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+    padding: 1.5rem 1.5rem;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 670px) {
+  .hloding {
+    width: 695px;
+  }
+}
+
+@media (max-width: 436px) {
+  .header .logo {
+    padding-top: 0.8vh;
+    margin-right: auto;
+    font-size: 1rem;
+    color: #c21919;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+  }
+}

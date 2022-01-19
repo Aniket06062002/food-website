@@ -1,0 +1,285 @@
+.hloding {
+  min-height: 30vh;
+  width: 100%;
+  background-image: none;
+  background-color: rgb(10, 45, 73);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.head {
+  font-family: "Kanit", sans-serif;
+  text-align: center;
+  padding-top: 13vh;
+  font-weight: 600;
+  font-size: 4rem;
+  color: rgb(109, 255, 25);
+}
+
+.cart .cart-container {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding: 10px;
+  gap: 10rem 10rem;
+  gap: 2rem;
+}
+
+.cart .cart-container .dish {
+  padding: 3rem;
+  display: flex;
+  gap: 2rem;
+  font-family: "Balsamiq Sans", cursive;
+}
+
+.cart .cart-container .dish img {
+  height: 20rem;
+  width: 30rem;
+  border: 2px solid red;
+}
+
+.h3 {
+  font-size: 3rem;
+  color: #000000;
+  padding-bottom: 0.5rem;
+}
+
+.cart .cart-container .dish .content .price {
+  font-size: 1.8rem;
+  color: #070a09;
+}
+
+.button {
+  border: none;
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  cursor: pointer;
+  border-radius: 3rem;
+}
+
+.button1 {
+  background-color: red;
+}
+.button2 {
+  background-color: green;
+}
+.b {
+  background-color: black;
+  pointer-events: none;
+}
+.checkout {
+  position: absolute;
+  padding-left: 45%;
+}
+.btn2 {
+  font-family: "Kanit", sans-serif;
+  margin-top: 1rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background: rgb(31, 28, 28);
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+
+:hover.btn2 {
+  background-color: rgb(24, 167, 24);
+}
+/* responsive */
+
+@media (max-width: 1295px) {
+  .cart .cart-container .dish {
+    padding: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .cart .cart-container .dish img {
+    height: 15rem;
+    width: 25rem;
+    border: 2px solid red;
+  }
+
+  .h3 {
+    font-size: 2.5rem;
+    color: #000000;
+    padding-bottom: 0.5rem;
+  }
+
+  .cart .cart-container .dish .content .price {
+    font-size: 1.5rem;
+    color: #070a09;
+  }
+}
+
+@media (max-width: 979px) {
+  .header .navbar ul {
+    padding-top: 1vh;
+    list-style: none;
+  }
+
+  .header .navbar li {
+    flex-direction: column-reverse;
+  }
+
+  .header .navbar li a {
+    font-size: 1.5rem;
+    color: #e91e1e;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+    padding: 1.5rem 1.5rem;
+  }
+  .cart .cart-container .dish {
+    padding: 3rem;
+    display: flex;
+    gap: 1.5rem;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .cart .cart-container .dish img {
+    height: 14rem;
+    width: 22rem;
+    border: 2px solid red;
+  }
+
+  .h3 {
+    font-size: 2rem;
+    color: #000000;
+    padding-bottom: 0.5rem;
+  }
+
+  .cart .cart-container .dish .content .price {
+    font-size: 1rem;
+    color: #070a09;
+  }
+  .btn2 {
+    font-family: "Kanit", sans-serif;
+    margin-top: 1rem;
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    background: rgb(31, 28, 28);
+    font-size: 1.3rem;
+    padding: 1rem 3rem;
+  }
+}
+
+@media (max-width: 863px) {
+  .cart .cart-container .dish {
+    padding: 1rem;
+    display: flex;
+    gap: 0.5rem;
+    font-family: "Balsamiq Sans", cursive;
+  }
+}
+
+@media (max-width: 788px) {
+  .berger {
+    position: absolute;
+    cursor: pointer;
+    right: 1.5%;
+    top: 14vh;
+  }
+
+  .line {
+    width: 33px;
+    background-color: rgb(0, 0, 0);
+    height: 4px;
+    margin: 3px 3px;
+  }
+
+  .header .navbar ul {
+    padding-top: 1vh;
+    list-style: none;
+    display: flex;
+    flex-direction: column-reverse;
+    opacity: 0;
+  }
+
+  .header .navbar li a {
+    font-size: 1.5rem;
+    color: #1a1616;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+    padding: 1.5rem 1.5rem;
+    flex-direction: column-reverse;
+  }
+
+  .cart .cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    gap: 10rem 10rem;
+    gap: 2rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .cart .cart-container .dish {
+    padding: 3rem;
+    gap: 3rem;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .cart .cart-container .dish img {
+    height: 20rem;
+    width: 35rem;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 585px) {
+  .cart .cart-container .dish img {
+    height: 16rem;
+    width: 28rem;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 518px) {
+  .cart .cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    gap: 5rem 5rem;
+    gap: 1rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  .cart .cart-container .dish {
+    padding: 1rem;
+    gap: 2rem;
+    font-family: "Balsamiq Sans", cursive;
+  }
+
+  .cart .cart-container .dish img {
+    height: 12rem;
+    width: 24rem;
+    border: 2px solid red;
+  }
+}
+
+@media (max-width: 436px) {
+  .button {
+    display: flex;
+    flex-direction: column;
+  }
+  .header .logo {
+    padding-top: 0.8vh;
+    margin-right: auto;
+    font-size: 1rem;
+    color: #c21919;
+    font-weight: bolder;
+    font-family: "Balsamiq Sans", cursive;
+  }
+}

@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kanit:wght@600&family=Open+Sans&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Kanit:wght@600&family=Open+Sans&family=Ubuntu:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+  }
+  
+  html {
+    font-size: 60%;
+    scroll-behavior: smooth;
+
+  }
+  
+  .header {
+    z-index: 1000;
+    position: fixed;
+    background-color:#ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 5rem;
+    display: flex;
+    height: 6vh;
+    box-shadow:1px 1px rgb(255, 19, 19);
+  }
+  
+  .header .logo {
+      padding-top: 1vh;
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #c21919;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+  }
+  
+  .header .logo i {
+    color: #f8aa00;
+  }
+  
+  .header .navbar ul {
+      padding-top: 1vh;
+    list-style: none;
+
+  }
+
+  .header .navbar li {
+      float: right;
+  }
+
+  .header .navbar li a{
+    font-size: 2rem;
+    color: #e91e1e;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 2rem 2rem;
+  }
+
+
+
+.home {
+  position: relative;
+}
+
+.home .slides-container .slide {
+  display: flex;
+  padding-top: 14vh;
+  padding-left: 4rem;
+  
+}
+
+.home .slides-container .slide .content h3 {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 6rem;
+  color:rgb(12, 187, 12);
+  padding-top: 10vh;
+}
+
+.home .slides-container .slide .content p {
+  font-family: 'Balsamiq Sans', cursive;
+  font-size: 1.5rem;
+  color: rgb(0, 0, 0);
+  padding: .5rem 0;
+  line-height: 2;
+  padding-right: 4rem;
+}
+.slides-container .slide .image img{
+  padding-right: 4rem;
+  width: 50rem;
+  height: 30rem;
+}
+
+
+  /* slider end */
+
+/* Dishes */
+.mid{
+  text-align: center;
+  font-family: 'Balsamiq Sans', cursive;
+  font-weight: bolder;
+  padding-top: 4rem;
+  font-size: 2rem;
+  color: #e9490a;
+}
+
+  .dishes .box-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40rem,1fr));
+    gap:1rem;
+}
+
+.dishes .box-container .box{
+    padding:1rem;
+    background:#fff;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.dishes .box-container .box img{
+    width: 35rem;
+    height:22rem;
+    border: 2px solid rgb(51, 39, 39);
+}
+
+.dishes .box-container .box h3{
+    color:black;
+    font-size: 3rem;
+    font-family: 'Kanit', sans-serif;
+}
+
+.dishes .box-container .box .stars i{
+    
+    font-size: 2rem;
+    color:rgb(69, 212, 69);
+}
+
+.dishes .box-container .box span{
+
+    color:rgb(22, 27, 22);
+    font-weight: bold;
+    margin-right: 0.8rem;
+    font-size: 2rem;
+    font-family: 'Kanit', sans-serif;
+    padding: 2rem;
+}
+
+
+.btn2 {
+  font-family: 'Kanit', sans-serif;
+  margin-top: 1rem;
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  background:rgb(31, 28, 28);
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+} 
+
+:hover.btn2{
+background-color: rgb(24, 167, 24);
+
+}
+
+:hover.btn{
+background-color: rgb(51, 43, 41); 
+}
+
+
+
+/* footer */
+.footer {
+  margin-top: 5rem;
+  background-color: rgb(25, 30, 36);
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+.footer .box-container {
+
+  display: -ms-grid;
+  display: grid; */
+   -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 2rem 0;
+  color: #fff;
+}
+
+.footer .box-container .box a {
+  text-align: center;
+  display: block;
+  font-size: 1.4rem;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+.footer .box-container .box a i {
+  color: #219150;
+  
+}
+
+.footer .box-container .box a:hover {
+  color: #1f8b4c;
+}
+
+
+.footer .credit {
+  text-align: center;
+  margin-top: 2.5rem;
+  padding: 1rem;
+  padding-top: 2.5rem;
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* footer end */
+
+
+/* responsive */
+
+@media (max-width: 1295px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3.5rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 5rem;
+    color:rgb(12, 187, 12);
+    padding-top: 10vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 2;
+    padding-right: 15rem;
+
+  }
+  .slides-container .slide .image img{
+    padding-top: 4rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    width: 45rem;
+    height: 28rem;
+  }
+  
+
+}
+
+@media (max-width: 1150px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3.5rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 5rem;
+    color:rgb(12, 187, 12);
+    padding-top: 10vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 2;
+    padding-right: 3rem;
+
+  }
+ 
+
+
+}
+
+@media (max-width: 1079px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 4rem;
+    color:rgb(12, 187, 12);
+    padding-top: 8vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 1.5;
+    padding-right: 4rem;
+  }
+ 
+
+
+ 
+
+
+}
+
+@media (max-width: 979px){
+ 
+  
+  .header .navbar ul {
+      padding-top: 1vh;
+    list-style: none;
+
+  }
+
+  .header .navbar li {
+      flex-direction: column-reverse;
+      
+  }
+
+  .header .navbar li a{
+    font-size: 1.5rem;
+    color: #e91e1e;
+    font-weight: bolder;
+    font-family: 'Balsamiq Sans', cursive;
+    padding: 1.5rem 1.5rem;
+  }
+  .slides-container .slide .image img{
+    padding-top: 5rem;
+    padding-right: 4rem;
+    padding-left: 3rem;
+    width: 40rem;
+    height: 22rem;
+  }
+
+ 
+
+
+}
+
+@media (max-width: 863px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 3rem;
+    color:rgb(12, 187, 12);
+    padding-top: 10vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 1.2;
+    padding-right: 4rem;
+  }
+
+  
+
+ 
+
+
+}
+
+@media (max-width: 748px){
+
+  .berger{
+    position: absolute;
+    cursor: pointer;
+    right: 1.5%;
+    top: 14vh;
+
+  }
+
+  .line{
+    width: 33px;
+    background-color:rgb(0, 0, 0);
+    height: 4px;
+    margin: 3px 3px;
+  }
+
+  .header .navbar ul {
+    padding-top: 1vh;
+  list-style: none;
+  display: flex;
+  flex-direction: column-reverse;
+  opacity: 0;
+ 
+}
+
+.header .navbar li a{
+  font-size: 1.5rem;
+  color: #1a1616;
+  font-weight: bolder;
+  font-family: 'Balsamiq Sans', cursive;
+  padding: 1.5rem 1.5rem;
+  flex-direction: column-reverse;
+  
+}
+
+.slides-container .slide .image img{
+  padding-top: 5rem;
+  padding-right: 4rem;
+  padding-left: 3rem;
+  width: 28rem;
+  height: 18rem;
+}
+
+}
+
+@media (max-width: 595px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 3rem;
+    color:rgb(12, 187, 12);
+    padding-top: 4vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 1rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 1;
+    padding-right: 3rem;
+  }
+ 
+}
+
+@media (max-width: 508px){
+  .slides-container .slide .image img{
+    padding-top: 4rem;
+    padding-right: 2rem;
+    padding-left: 3rem;
+    width: 28rem;
+    height: 18rem;
+  }
+
+  .slides-container .slide .image img{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    width: 20rem;
+    height: 18rem;
+  }
+ 
+}
+
+@media (max-width: 447px){
+  .home .slides-container .slide {
+    display: flex;
+    padding-top: 14vh;
+    padding-left: 3rem;
+    
+  }
+  
+  .home .slides-container .slide .content h3 {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 2rem;
+    color:rgb(12, 187, 12);
+    padding-top: 4vh;
+  }
+  
+  .home .slides-container .slide .content p {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 0.5rem;
+    color: rgb(0, 0, 0);
+    padding: .5rem 0;
+    line-height: 1;
+    padding-right: 3rem;
+  }
+ 
+
+}
+
+@media (max-width: 436px){
+  .header .logo {
+    padding-top: .8vh;
+  margin-right: auto;
+  font-size: 1rem;
+  color: #c21919;
+  font-weight: bolder;
+  font-family: 'Balsamiq Sans', cursive;
+}
+
+}
+  
+
+
+  
